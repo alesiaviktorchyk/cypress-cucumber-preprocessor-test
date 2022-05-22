@@ -14,7 +14,7 @@
 		"url": "git+https://github.com/alesiaviktorchyk/cypress-cucumber-preprocessor-test.git"
 	},
 	"scripts": {
-		"test": "cypress open --config-file config/dev.json"
+		"test": "cypress open"
 	},
 	"dependencies": {
 		"@badeball/cypress-cucumber-preprocessor": "^10.0.0",
@@ -23,6 +23,6 @@
 		"cypress-cucumber-preprocessor": "^4.3.1"
 	},
 	"cypress-cucumber-preprocessor": {
-		"stepDefinitions": "cypress/support/step-definitions/**/*.{js,ts}"
+		"step_definitions": "cypress/support/step-definitions"
 	}
 }
