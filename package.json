@@ -1,0 +1,28 @@
+{
+	"name": "cypress-cucumber-preprocessor-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"author": "alesiaviktorchyk",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/alesiaviktorchyk/cypress-cucumber-preprocessor-test/issues"
+	},
+	"homepage": "https://github.com/alesiaviktorchyk/cypress-cucumber-preprocessor-test#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alesiaviktorchyk/cypress-cucumber-preprocessor-test.git"
+	},
+	"scripts": {
+		"test": "cypress open --config-file config/dev.json"
+	},
+	"dependencies": {
+		"@badeball/cypress-cucumber-preprocessor": "^10.0.0",
+		"@cypress/browserify-preprocessor": "^3.0.2",
+		"cypress": "^9.6.1",
+		"cypress-cucumber-preprocessor": "^4.3.1"
+	},
+	"cypress-cucumber-preprocessor": {
+		"stepDefinitions": "cypress/support/step-definitions/**/*.{js,ts}"
+	}
+}
